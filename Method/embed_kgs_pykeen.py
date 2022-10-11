@@ -3,14 +3,14 @@ from pykeen.pipeline import pipeline
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--kg', type=str, nargs='+', default='drkg', help="The knowledge graph name, should be in [drkg, wn18rr, carcinogenesis, ... (see folder datasets)]")
+    parser.add_argument('--kgs', type=str, nargs='+', default='drkg', help="Knowledge graph names, should be in [drkg, wn18rr, carcinogenesis, ... (see folder datasets)]")
     parser.add_argument('--models', type = str, nargs='+', default=['TransE', 'Distmult'], help="Embedding model(s)")
     parser.add_argument('--loss', type=str, default='bceaftersigmoid', help="Loss to be used during training")
     parser.add_argument('--epochs', type=int, default=50, help="Number of training epochs")
     parser.add_argument('--random_seed', type=int, default=142, help="Random seed for model initialization")
     parser.add_argument('--dataset_kwargs', type=dict, default={'create_inverse_triples': False}, help="Dataset key arguments")
     args = parser.parse_args()
-    for kg in args.kg:
+    for kg in args.kgs:
         print()
         print("#"*50)
         print("Embedding "+kg.upper()+" KG")
@@ -32,7 +32,7 @@ if __name__ == "__main__":
             storage_path = './embeddings/'+kg+'_'+model
             result.save_to_directory(storage_path)
 
-        with open(storage_path+"/entity_to_ids.json", "w") as file:
-            json.dump(result.training.entity_to_id, file, indent=3, ensure_ascii=False)
-        with open(storage_path+"/relation_to_ids.json", "w") as file:
-            json.dump(result.training.relation_to_id, file, indent=3, ensure_ascii=False)
+            with open(storage_path+"/entity_to_ids.json", "w") as file:
+                json.dump(result.training.entity_to_id, file, indent=3, ensure_ascii=False)
+            with open(storage_path+"/relation_to_ids.json", "w") as file:
+                json.dump(result.training.relation_to_id, file, indent=3, ensure_ascii=False)
