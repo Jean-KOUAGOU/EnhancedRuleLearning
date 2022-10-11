@@ -66,6 +66,6 @@ Copy ` amie-dev.jar ` into ` Method/AMIE ` and ` Method/TransAMIE `
 
 - Run AMIE+ on completed knowledge graphs: `cd Method/TransAMIE ` then ` java -jar amie-dev.jar ../datasets/{kb}/train_completed_TransE.txt `
 
-- To save the generated rules in each case, specify an output directory and file name by adding ` >> directory_name/file_name.txt ` in front of the lines above
+- To save the generated rules in each case, specify an output directory and file name by adding ` >> directory_name/file_name.txt ` at the end of the lines above
 
 
