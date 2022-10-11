@@ -1,0 +1,52 @@
+Assuming rdf:type as type relation
+Loading files... 
+  Starting train.txt
+  Finished train.txt, still running: 0
+Loaded 86835 facts in 0.56 s using 725 MB
+Using HeadCoverage as pruning metric with minimum threshold 0.01
+Using recursivity limit 3
+Lazy mining assistant that stops counting when the denominator gets too high
+No minimum threshold on standard confidence
+Filtering on PCA confidence with minimum threshold 0.1
+Constants in the arguments of relations are disabled
+Lossless (query refinement) heuristics enabled
+MRT calls: 0
+Starting the mining phase... Using 16 threads
+Rule	Head Coverage	Std Confidence	PCA Confidence	Positive Examples	Body size	PCA Body size	Functional variable
+?b  _hypernym  ?a   => ?a  _also_see  ?b	0.029253272	0.00109208	0.130136986	38	34796	292	?b
+?b  _also_see  ?a   => ?a  _also_see  ?b	0.637413395	0.637413395	0.883671291	828	1299	937	?b
+?b  _verb_group  ?a   => ?a  _verb_group  ?b	0.931458699	0.931458699	0.980573543	1060	1138	1081	?b
+?b  _derivationally_related_form  ?a   => ?a  _derivationally_related_form  ?b	0.932222783	0.932222783	0.95163008	27701	29715	29109	?b
+?b  _hypernym  ?h  ?a  _member_of_domain_usage  ?h   => ?a  _member_of_domain_usage  ?b	0.049284579	0.196202532	0.756097561	31	158	41	?b
+?b  _hypernym  ?h  ?a  _member_of_domain_region  ?h   => ?a  _member_of_domain_region  ?b	0.015167931	0.237288136	0.736842105	14	59	19	?b
+?g  _hypernym  ?b  ?a  _member_of_domain_usage  ?g   => ?a  _member_of_domain_usage  ?b	0.028616852	0.04400978	0.72	18	409	25	?b
+?h  _also_see  ?b  ?a  _also_see  ?h   => ?a  _also_see  ?b	0.157813703	0.111352526	0.111352526	205	1841	1841	?b
+?g  _hypernym  ?b  ?a  _member_of_domain_region  ?g   => ?a  _member_of_domain_region  ?b	0.01191766	0.021072797	0.733333333	11	522	15	?b
+?a  _also_see  ?h  ?b  _also_see  ?h   => ?a  _also_see  ?b	0.16243264	0.094831461	0.115997801	211	2225	1819	?b
+?h  _also_see  ?a  ?b  _also_see  ?h   => ?a  _also_see  ?b	0.15704388	0.110809343	0.113712375	204	1841	1794	?b
+?h  _synset_domain_topic_of  ?b  ?a  _verb_group  ?h   => ?a  _synset_domain_topic_of  ?b	0.012516046	0.375	0.75	39	104	52	?a
+?a  _has_part  ?h  ?b  _instance_hypernym  ?h   => ?a  _has_part  ?b	0.029900332	0.41025641	0.52173913	144	351	276	?b
+?a  _has_part  ?h  ?h  _synset_domain_topic_of  ?b   => ?a  _synset_domain_topic_of  ?b	0.013478819	0.259259259	0.79245283	42	162	53	?a
+?g  _synset_domain_topic_of  ?b  ?g  _verb_group  ?a   => ?a  _synset_domain_topic_of  ?b	0.012516046	0.386138614	0.75	39	101	52	?a
+?a  _instance_hypernym  ?h  ?h  _synset_domain_topic_of  ?b   => ?a  _synset_domain_topic_of  ?b	0.032092426	0.395256917	0.862068966	100	253	116	?a
+?a  _has_part  ?g  ?g  _hypernym  ?b   => ?a  _has_part  ?b	0.01038206	0.022482014	0.101832994	50	2224	491	?b
+?a  _derivationally_related_form  ?h  ?h  _synset_domain_topic_of  ?b   => ?a  _synset_domain_topic_of  ?b	0.036264442	0.065545244	0.495614035	113	1724	228	?a
+?g  _has_part  ?a  ?g  _synset_domain_topic_of  ?b   => ?a  _synset_domain_topic_of  ?b	0.018934531	0.239837398	0.746835443	59	246	79	?a
+?h  _derivationally_related_form  ?a  ?b  _verb_group  ?h   => ?a  _derivationally_related_form  ?b	0.021638903	0.298791822	0.36954023	643	2152	1740	?b
+?a  _hypernym  ?h  ?h  _synset_domain_topic_of  ?b   => ?a  _synset_domain_topic_of  ?b	0.178754814	0.285056295	0.809593023	557	1954	688	?a
+?a  _derivationally_related_form  ?h  ?b  _verb_group  ?h   => ?a  _derivationally_related_form  ?b	0.022110045	0.30430755	0.374358974	657	2159	1755	?b
+?a  _derivationally_related_form  ?g  ?g  _verb_group  ?b   => ?a  _derivationally_related_form  ?b	0.022278311	0.303530491	0.370660694	662	2181	1786	?b
+?g  _derivationally_related_form  ?a  ?g  _verb_group  ?b   => ?a  _derivationally_related_form  ?b	0.021773515	0.298019346	0.366364666	647	2171	1766	?b
+?b  _derivationally_related_form  ?h  ?a  _verb_group  ?h   => ?a  _derivationally_related_form  ?b	0.021706209	0.298749421	0.304101839	645	2159	2121	?b
+?h  _derivationally_related_form  ?b  ?a  _verb_group  ?h   => ?a  _derivationally_related_form  ?b	0.021336026	0.294609665	0.294609665	634	2152	2152	?b
+?g  _hypernym  ?a  ?g  _synset_domain_topic_of  ?b   => ?a  _synset_domain_topic_of  ?b	0.088254172	0.145348837	0.721784777	275	1892	381	?a
+?b  _derivationally_related_form  ?g  ?g  _verb_group  ?a   => ?a  _derivationally_related_form  ?b	0.021807168	0.297111417	0.30195713	648	2181	2146	?b
+?g  _derivationally_related_form  ?a  ?g  _synset_domain_topic_of  ?b   => ?a  _synset_domain_topic_of  ?b	0.03690629	0.067766647	0.502183406	115	1697	229	?a
+?g  _derivationally_related_form  ?b  ?g  _verb_group  ?a   => ?a  _derivationally_related_form  ?b	0.021403332	0.292952556	0.292952556	636	2171	2171	?b
+?g  _derivationally_related_form  ?b  ?a  _derivationally_related_form  ?g   => ?a  _verb_group  ?b	0.422671353	0.008085393	0.145537065	481	59490	3305	?b
+?h  _derivationally_related_form  ?a  ?b  _derivationally_related_form  ?h   => ?a  _verb_group  ?b	0.423550088	0.008102202	0.147130647	482	59490	3276	?b
+?a  _derivationally_related_form  ?h  ?b  _derivationally_related_form  ?h   => ?a  _verb_group  ?b	0.41827768	0.007909079	0.145299145	476	60184	3276	?b
+?g  _derivationally_related_form  ?a  ?g  _derivationally_related_form  ?b   => ?a  _verb_group  ?b	0.430579965	0.008160003	0.146137787	490	60049	3353	?b
+Mining done in 3.88 s
+Total time 4.55 s
+34 rules mined.
