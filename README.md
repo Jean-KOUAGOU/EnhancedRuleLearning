@@ -23,8 +23,6 @@ Install Java (version 8 or higher) in the environment (secondment): ```conda ins
 
 Download ```datasets.zip``` from [drive](https://drive.google.com/file/d/1qu2_c_SCBql6QGFA6hipiIlgw0p4fKRr/view?usp=sharing), extract them into Method/
 
-Download pretrained embeddings ` embeddings.zip ` from [drive](https://drive.google.com/file/d/1JKlP61JqJDMwh7rPnwjAQmBQbfSuHGQR/view?usp=sharing) and extract them into Method/
-
 
 ## Reproduce the reported results on improved rule mining with AMIE+:
 
