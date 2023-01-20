@@ -79,8 +79,8 @@ class LinkPredictor:
     def score(self, emb_e1, emb_r, emb_e2):
         def TransE_pykeen(h, r, t):
             if h.ndim == 1:
-                return 2*torch.sigmoid(-torch.norm(h+r-t, p=2))
-            return 2*torch.sigmoid(-torch.norm(h+r-t, p=2, dim=-1))
+                return 2(1-torch.sigmoid(-torch.norm(h+r-t, p=2)))
+            return 2*(1-torch.sigmoid(-torch.norm(h+r-t, p=2, dim=-1)))
     
         def Distmult_pykeen(h,r,t):
             if h.ndim == 1:
