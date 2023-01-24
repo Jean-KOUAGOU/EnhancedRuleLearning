@@ -27,7 +27,7 @@ if __name__ == "__main__":
                 optimizer='Adam',
                 loss=args.loss,
                 #epochs=args.epochs,
-                training_kwargs=dict(num_epochs=args.epochs, batch_size=128),
+                training_kwargs=dict(num_epochs=args.epochs, batch_size=1024),
                 random_seed=args.random_seed,
                 dataset_kwargs=args.dataset_kwargs
             )
