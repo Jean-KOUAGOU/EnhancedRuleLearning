@@ -1,4 +1,4 @@
-name: secondment
+name: enhancerl
 channels:
   - pytorch
   - conda-forge
