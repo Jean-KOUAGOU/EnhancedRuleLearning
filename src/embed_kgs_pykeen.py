@@ -4,7 +4,7 @@ from pykeen.pipeline import pipeline
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--kgs', type=str, nargs='+', default=['drkg'], help="Knowledge graph names, should be in [drkg, wn18rr, carcinogenesis, ... (see folder datasets)]")
-    parser.add_argument('--models', type = str, nargs='+', default=['TransE', 'Distmult'], help="Embedding model(s)")
+    parser.add_argument('--models', type = str, nargs='+', default=['TransE', 'Distmult', 'Rotate'], help="Embedding model(s)")
     parser.add_argument('--loss', type=str, default='mse', help="Loss to be used during training")
     parser.add_argument('--epochs', type=int, default=50, help="Number of training epochs")
     parser.add_argument('--random_seed', type=int, default=142, help="Random seed for model initialization")
@@ -21,8 +21,8 @@ if __name__ == "__main__":
             print(f'Training with {model}...')
             print('*'*50)
             result = pipeline(
-                training="./datasets/"+kg+"/train.txt",
-                testing="./datasets/"+kg+"/test.txt",
+                training="./data/datasets/"+kg+"/train.txt",
+                testing="./data/datasets/"+kg+"/test.txt",
                 model=model,
                 optimizer='Adam',
                 loss=args.loss,
@@ -31,7 +31,7 @@ if __name__ == "__main__":
                 random_seed=args.random_seed,
                 dataset_kwargs=args.dataset_kwargs
             )
-            storage_path = './embeddings/'+kg+'_'+model
+            storage_path = './data/embeddings/'+kg+'_'+model
             result.save_to_directory(storage_path)
 
             with open(storage_path+"/entity_to_ids.json", "w") as file:

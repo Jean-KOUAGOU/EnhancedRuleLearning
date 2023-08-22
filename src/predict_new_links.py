@@ -1,4 +1,4 @@
-from link_prediction.core import LinkPredictor
+from core import LinkPredictor
 import argparse
 
 if __name__ == "__main__":
