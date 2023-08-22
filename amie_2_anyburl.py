@@ -15,9 +15,9 @@ if __name__ == "__main__":
                 folder = map_model_to_folder[model.lower()]
                 in_path = f"data/{folder}/rules_{kg}/rules_top5000.txt"
                 out_path = f"data/{folder}/rules_{kg}/anyburl-format"
-                os.system(f"python systems/SAFRAN/python/amie_2_anyburl.py --from {in_path} --to {out_path}")
+                os.system(f"python systems/amie_2_anyburl.py --from {in_path} --to {out_path}")
         else:
             folder = "AMIE"
             in_path = f"data/{folder}/rules_{kg}/rules.txt"
             out_path = f"data/{folder}/rules_{kg}/anyburl-format"
-            os.system(f"python systems/SAFRAN/python/amie_2_anyburl.py --from {in_path} --to {out_path}")
+            os.system(f"python systems/amie_2_anyburl.py --from {in_path} --to {out_path}")
