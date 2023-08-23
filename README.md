@@ -32,14 +32,14 @@ Download datasets and pretrained models by running `./download_data`
 2. Performance of the generated rules on link prediction on test sets:
  Open a terminal and run `python evaluate-rules-hits.py` with the following parameter options:
  
-`
---kgs {wn18rr,fb15k,carcinogenesis,mutagenesis,openbiolink,yago3,drkg} [{wn18rr,fb15k,carcinogenesis,mutagenesis,openbiolink,yago3,drkg} ...]
+```
+  --kgs {wn18rr,fb15k,carcinogenesis,mutagenesis,openbiolink,yago3,drkg} [{wn18rr,fb15k,carcinogenesis,mutagenesis,openbiolink,yago3,drkg} ...]
                         Knowledge graph names, defaulting to wn18rr
---system {amie,AMIE,anyburl,AnyBURL}
+  --system {amie,AMIE,anyburl,AnyBURL}
                         System to execute, defaulting to amie
---models {TransE,Distmult,Rotate,transe,distmult,rotate} [{TransE,Distmult,Rotate,transe,distmult,rotate} ...]
+  --models {TransE,Distmult,Rotate,transe,distmult,rotate} [{TransE,Distmult,Rotate,transe,distmult,rotate} ...]
                         Embedding model(s), defaulting to None
-`
+```
 
 ## Running rule mining systems 
 
