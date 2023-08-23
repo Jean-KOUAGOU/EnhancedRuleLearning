@@ -1,3 +1,5 @@
+# Adapted from https://github.com/OpenBioLink/SAFRAN
+
 import argparse
 
 class ArgParser(argparse.ArgumentParser):
