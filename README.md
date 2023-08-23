@@ -87,8 +87,8 @@ Open a terminal in `EnhancedRuleLearning` and run `python src/embed_kgs_pykeen.p
 Link prediction performance using the mined rules
 
 |                               | Hits@1  |  Hits@3 | MRR   |
-|-------------------------------|----------------------------
-|                                           AMIE+                   
+|------------------------------------------------------------
+|                                           :--AMIE+--:                   
 | WN18RR                        | 0.390   | 0.395   | 0.398 |
 | CARCINOGENESIS                | 0.216   | 0.245   | 0.248 |
 | MUTAGENESIS                   | 0.217   | 0.244   | 0.244 |
@@ -96,7 +96,7 @@ Link prediction performance using the mined rules
 | YAGO3-10                      | 0.244   | 0.333   | 0.408 |
 | DRKG                          | 0.147   | 0.172   | 0.215 |
 | OPENBIOLINK                   | 0.038   | 0.081   | 0.158 |
-| \multicolumn{1}{|c}{}                Ours (with RotatE) 
+|                                   :--Ours (with RotatE)--: 
 | WN18RR                        | 0.384   | 0.390   | 0.392 |
 | CARCINOGENESIS                | 0.220   | 0.248   | 0.252 |
 | MUTAGENESIS                   | 0.182   | 0.215   | 0.227 |
@@ -104,7 +104,7 @@ Link prediction performance using the mined rules
 | YAGO3-10                      | 0.243   | 0.331   | 0.405 |
 | DRKG                          | 0.147   | 0.172   | 0.215 |
 | OPENBIOLINK                   | 0.059   | 0.129   | 0.258 |
-| \multicolumn{1}{|c}{}                   AnyBURL       
+|                                           :--AnyBURL--:       
 | WN18RR                        | 0.469   | 0.527   | 0.594 |
 | CARCINOGENESIS                | 0.483   | 0.533   | 0.630 |
 | MUTAGENESIS                   | 0.477   | 0.547   | 0.639 |
