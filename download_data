@@ -1,0 +1,3 @@
+wget https://files.dice-research.org/projects/KnowGraphs/nkouagou/data_EnhanceRL.zip -O ./data.zip
+unzip -o ./data.zip
+rm -f ./data.zip
