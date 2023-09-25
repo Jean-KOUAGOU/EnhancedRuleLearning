@@ -82,7 +82,12 @@ Open a terminal in `EnhancedRuleLearning` and run `python src/embed_kgs_pykeen.p
                         Whether to store the newly predicted triples
 ```
 
-## Peliminary results
+## Results
+
+Runtime
+
+![runtime](runtime.jpg)
+
 
 Link prediction performance using the mined rules
 
